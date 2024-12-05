@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/About.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="icon" href="img/icono.ico" type="image/x-icon">
+    <style>
+       .blog-content {
+    display: flex;
+    flex-wrap: nowrap; /* Cambia wrap a nowrap */
+    justify-content: space-between; /* Distribuye el espacio uniformemente */
+    gap: 15px;
+    width: 100%;
+}
+
+.blog-1 {
+    text-align: center;
+    flex: 1; /* Hace que cada elemento tome el mismo espacio */
+}
+
+.blog-1 img {
+    width: 150px; /* Reduce el tamaño para que quepan en una línea */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+    </style>
+    
+</head>
+<body>
+    <div id="body">
+        <header id="header">
+            <div id="navbar">
+                <div class="logo">
+                    <a href="#"><img src="img/cropped-escuela.png" alt="" id="logoimg"></a>
+                    <div>
+                        <div id="titulo">
+                            <p class="t">Escuela Tecnica N°24</p>
+                            <p class="t">Defensa de Buenos Aires</p>
+                        </div>
+                        <div id="ET">
+                            <p class="t">ET N°24</p>
+                            <p class="t">Def. de Bs.As</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="links">
+                    <li><a href="index.html" class="a">Inicio</a></li>
+                    <li><a href="about.html" id="a" style="color: #ffe100;">Acerca de</a></li>
+                    <li><a href="services.html" class="a">Especialidades</a></li>
+                    <li><a href="contact.html" class="a">Contactos</a></li> 
+                    <li><a href="https://et24de17-caba.edu.ar/" class="a">Plataforma</a></li> 
+                </ul>
+                <a href="#" class="action_btn"></a>
+                <div id="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div id="dropdown_menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="services.html">Especialidades</a></li>
+                <li><a href="contact.html">Contactos</a></li>
+                <li><a href="https://et24de17-caba.edu.ar/">Plataforma</a></li> 
+                </li>
+            </div>
+        </header>
+    
+        <main>
+            <section id="hero">
+                <h1>Tecnico en Computacion</h1>
+            
+            </section>
+        </main>
+
+        <section class="escuela">
+            <!--         <img class="escuela-img" src="./img/bg2.png" alt="">
+             -->        <div class="escuela-content container">
+                        <h2>Alcance del Titulo</h2>
+                        <p class="txt-p">
+                            El Técnico en Computación está preparado para aplicar sus conocimientos, habilidades, valores y actitudes en contextos laborales reales, con un enfoque profesional y una marcada responsabilidad social. Su formación le permite diseñar, desarrollar, adaptar, implementar y mantener aplicaciones informáticas, así como planificar, instalar, configurar y ofrecer soporte a sistemas informáticos. Además, es capaz de elaborar documentación técnica y manuales de usuario en función de los requerimientos técnicos y funcionales de los proyectos en los que participe.
+
+                            Este profesional también asiste y asesora a los usuarios en la selección, adquisición, instalación y personalización de aplicaciones, equipos y sistemas, siempre actuando conforme a las normativas de seguridad vigentes. Puede desempeñarse en relación de dependencia o mediante emprendimientos individuales o asociativos, mostrando versatilidad en su campo. Posee competencias para manejar diversos paradigmas y lenguajes de programación, seleccionando los más adecuados según las características de cada situación, y para desarrollar un pensamiento lógico y estructurado que le permite destacarse en tareas de programación y administración de datos.
+                            
+                            Asimismo, el Técnico en Computación interpreta e implementa diseños de aplicaciones, facilitando la operatividad del usuario y garantizando la protección e integridad de sus datos frente a posibles amenazas como virus. Está capacitado para instalar y poner en funcionamiento componentes, equipos, sistemas y redes, además de encargarse del mantenimiento de equipos de baja complejidad y de sus componentes. Optimiza el entorno informático del usuario para mejorar su experiencia de trabajo y lo asesora en la compra y venta de productos o servicios tecnológicos. Finalmente, es capaz de gestionar de forma autónoma sus actividades, manteniendo un enfoque profesional y resolutivo en cada tarea que emprende.
+                        </p>
+                        <!-- <div class="escuela-group">
+                            <div class="escuela-1">
+                                <img src="./img/c1.png" alt="">
+                                <h3>Escuela Lorem</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
+                                </p>
+                            </div>
+                            <div class="escuela-1">
+                                <img src="./img/c2.png" alt="">
+                                <h3>Escuela Lorem</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
+                                </p>
+                            </div>
+                            <div class="escuela-1">
+                                <img src="./img/c3.png" alt="">
+                                <h3>Escuela Lorem</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
+                                </p>
+                            </div>
+                        </div> -->
+            <!--             <a href="#" class="btn-1">Informacion</a>
+             -->        </div>
+            <hr>
+            
+        </section>
+                
+                <main class="services">
+                    <div class="services-content container">
+                       
+                        <!-- <div class="services-group">
+            
+                            <div class="services-1">
+                                <img src="./img/i1.svg" alt="">
+                                <h3>Services 1</h3>
+                            </div>
+                            <div class="services-1">
+                                <img src="./img/i2.svg" alt="">
+                                <h3>Services 2</h3>
+                            </div>
+                            <div class="services-1">
+                                <img src="./img/i3.svg" alt="">
+                                <h3>Services 3</h3>
+                            </div>
+                        </div> -->
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores animi iure repudiandae aperiam deserunt voluptates obcaecati, consectetur necessitatibus rerum doloremque provident officia nesciunt natus iste.
+                        </p> -->
+                        
+                    </div>
+                </main>
+               
+            
+              <!--   <section class="general">
+                    <div class="general-3"></div>
+                    <div class="general-1">
+                        <h2>totam similique</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores animi iure repudiandae aperiam deserunt voluptates obcaecati, consectetur necessitatibus rerum doloremque provident officia nesciunt natus iste.
+                        </p>
+                        <a href="#" class="btn-1">Informacion</a>
+                    </div>
+                </section> -->
+                
+                <section class="blog container">
+                   
+                </section>
+            
+    
+       <script src="./js/java.js"></script>
+       
+       <footer>
+        <div id="footer-img">
+            <img src="img/cropped-escuela.png" alt="">
+            <p class="t">Escuela Tecnica N°24</p>
+            <p class="t">Defensa de Buenos Aires</p>
+        </div>
+        <div class="border"></div>
+        <div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/radioet24?igsh=MWplOG1nejc4czNhZg==" class="social-icon"></a>
+                    <a href="https://www.instagram.com/radioet24?igsh=MWplOG1nejc4czNhZg==">radioet24</a>
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4" class="social-icon"></a>
+                    <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4">6topp.et24</a>
+                </div>
+        </div>
+        <div class="border"></div>
+        <ul class="footer-menu-container">
+            <li class="menu-item"><a href="index.html">Inicio</a></li>
+            <li class="menu-item"><a href="about.html">Acerca de</a></li>
+            <li class="menu-item"><a href="services.html">Especialidades</a></li>
+            <li class="menu-item"><a href="contact.html">Contactos</a></li> 
+            <li class="menu-item"><a href="https://et24de17-caba.edu.ar/">Plataforma</a></li> 
+        </ul>
+    </footer>
+    <footer>
+        <span class="copyright">&copy;2024, Escuela n°24. Todos los derechos reservados..</span>
+    </footer>
+    </div>
+</body>
+</html>
