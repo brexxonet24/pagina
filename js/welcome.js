@@ -1,7 +1,7 @@
 const mensajes = [
     "Bienvenidos a la Pagina de la ET 24",
     "Somos Computación",
-    "Somos Administración y Gestión",
+    "Somos Gestión y Administración ",
     "Somos Educación"
   ];
 
