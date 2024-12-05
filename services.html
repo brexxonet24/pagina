@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="icon" href="img/icono.ico" type="image/x-icon">
+    <style>
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .tooltip {
+            visibility: hidden;
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%) scale(0.7) translateY(30px);
+            background-color: white;
+            color: #333;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 6px;
+            width: 90vw;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border: 1px solid #ddd;
+            font-size: 14px;
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2), 
+                        0 10px 30px rgba(0,0,0,0.1);
+        }
+    
+        .tooltip::before {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent white transparent;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transform: scale(0);
+        }
+    
+        .tooltip.show {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(-50%) scale(1) translateY(0);
+        }
+    
+        .tooltip.show::before {
+            transform: scale(1);
+        }
+    
+        @media (max-width: 768px) {
+            .tooltip {
+                width: 95vw;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="body">
+        <header id="header">
+            <div id="navbar">
+                <div class="logo">
+                    <a href="#"><img src="img/cropped-escuela.png" alt="" id="logoimg"></a>
+                    <div>
+                        <div id="titulo">
+                            <p class="t">Escuela Tecnica N°24</p>
+                            <p class="t">Defensa de Buenos Aires</p>
+                        </div>
+                        <div id="ET">
+                            <p class="t">ET N°24</p>
+                            <p class="t">Def. de Bs.As</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="links">
+                    <li><a href="index.html" class="a">Inicio</a></li>
+                    <li><a href="about.html" class="a">Acerca de</a></li>
+                    <li><a href="services.html" id="a" style="color: #ffe100;">Especialidades</a></li>
+                    <li><a href="contact.html" class="a">Contactos</a></li> 
+                    <li><a href="https://et24de17-caba.edu.ar/" class="a">Plataforma</a></li> 
+                </ul>
+                <a href="#" class="action_btn"></a>
+                <div id="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div id="dropdown_menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="services.html">Especialidades</a></li>
+                <li><a href="contact.html">Contactos</a></li>
+                <li><a href="https://et24de17-caba.edu.ar/">Plataforma</a></li> 
+                </li>
+            </div>
+        </header>
+    
+        <main>
+            <div id="h1" style="text-align: center; padding: 2rem;">
+                <ul style="list-style: none; display: inline-block; text-align: left;">
+                    <li style="font-size: 1.5em; margin-bottom: 1rem;" class="tooltip-container">
+                        <span style="display: inline-flex; align-items: center; cursor: pointer;">
+                            <i class="fa-solid fa-laptop-code" style="margin-right: 10px; color: #0066cc;"></i>
+                            Técnico en Computación
+                        </span>
+                        <div class="tooltip">
+                            El Técnico en Computación es un profesional capacitado para desarrollar, implementar y mantener soluciones informáticas, abarcando tanto software como hardware. Su formación le permite proyectar y mantener aplicaciones y sistemas informáticos, generando la documentación técnica necesaria. Está preparado para programar utilizando diversos lenguajes y paradigmas, aplicando un pensamiento lógico y estructurado. Puede instalar, configurar y mantener equipos, componentes y redes de baja complejidad. Se enfoca en garantizar la integridad de los datos y la protección contra virus, optimizando el ambiente informático del usuario. Brinda asistencia y asesoramiento a usuarios en la selección, adquisición e instalación de equipos y sistemas. Puede trabajar tanto en relación de dependencia como de manera independiente, gestionando sus propias actividades. Debe cumplir con las normativas de seguridad vigentes en todas sus operaciones. Facilita la operación del usuario y mantiene la documentación actualizada de los sistemas.
+                        </div>
+                    </li>
+
+                    <li style="font-size: 1.5em;" class="tooltip-container">
+                        <span style="display: inline-flex; align-items: center; cursor: pointer;">
+                            <i class="fa-solid fa-briefcase" style="margin-right: 10px; color: #0066cc;"></i>
+                            Gestion y Aministracion de las Organizaciones
+                        </span>
+                        <div class="tooltip">
+                            El Técnico Superior en Administración planifica, coordina y controla recursos en áreas administrativas.
+                            Está capacitado para gestionar procesos administrativos, contables, compras, ventas, recursos financieros y humanos.
+                            Domina herramientas informáticas y software de gestión específicos del campo.
+                            Puede tomar decisiones proactivamente y supervisar personal a su cargo.
+                            Desarrolla habilidades de liderazgo y trabajo en equipo en entornos competitivos.
+                            En grandes organizaciones, opera en áreas funcionales y puede ocupar mandos medios.
+                            En PYMES, puede gestionar toda la organización y tomar decisiones estratégicas.
+                            Está preparado para planificar y gestionar sus propios emprendimientos.
+                            Su formación es sólida y orientada a resolver problemas del contexto económico-social.
+                            Actúa bajo principios éticos y criterios de responsabilidad social.
+                        </div>
+                    </li>
+                   
+                </ul>
+            </div>
+            <section id="hero">
+                <div id="cont">
+                    <div id="tabla">
+                        <h2 style="margin-left: 20px; margin-right: 20px;">Espacios Curriculares</h2>
+                        <h1>1° Ciclo</h1>
+                        <!-- PRIMERO Y SEGUNDO -->
+                        <div class="flex" id="ps">
+                            <div style="width: 120%;">
+                                <h2 style="margin-left: 20px; margin-right: 20px;">1° Año</h2>
+                                <div id="pri" class="año">
+                                    <div class="mat">Turoria</div>
+                                    <div class="mat">Lengua y Literatura</div>
+                                    <div class="mat">Ingles</div>
+                                    <div class="mat">Historia</div>
+                                    <div class="mat">Geografia</div>
+                                    <div class="mat">Educacion Ciudadana</div>
+                                    <div class="mat">Educacion Fisica</div>
+                                    <div class="mat">Biologia</div>
+                                    <div class="mat">Educacion Artistica</div>
+                                    <div class="mat">Matematicas</div>
+                                </div>
+                                <p class="taller2">Taller</p>
+                                <div id="pri" class="año3">
+                                    <div class="mat">Taller1</div>
+                                    <div class="mat">Tecnologia de la Representacion</div>
+                                </div>
+                            </div>
+                            
+                            <div style="width: 120%;">
+                                <h2 style="margin-left: 20px; margin-right: 20px;">2° Año</h2>
+                                <div id="seg" class="año">
+                                    <div class="mat">Lengua y Literatura</div>
+                                    <div class="mat">Ingles</div>
+                                    <div class="mat">Historia</div>
+                                    <div class="mat">Geografia</div>
+                                    <div class="mat">Educacion Ciudadana</div>
+                                    <div class="mat">Educacion Fisica</div>
+                                    <div class="mat">Biologia</div>
+                                    <div class="mat">Fisica</div>
+                                    <div class="mat">Matematicas</div>
+                                </div>
+                                <p class="taller2">Taller</p>
+                                <div id="pri" class="año3">
+                                    <div class="mat">Taller</div>
+                                    <div class="mat">Tecnologia de la Representacion</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <h1>2° Ciclo</h1>
+                        <!-- ESPECIALIDAD -->
+                        <h2>3° Año</h2>
+                        <div class="flex">
+                            <div class="año">
+                                <p class="esp">Computacion</p>
+                                <div id="terCom" class="com">
+                                    <div class="mat">Lengua y Literatura</div>
+                                    <div class="mat">Ingles</div>
+                                    <div class="mat">Historia</div>
+                                    <div class="mat">Geografia</div>
+                                    <div class="mat">Educacion Ciudadana</div>
+                                    <div class="mat">Educacion Fisica</div>
+                                    <div class="mat">Quimica</div>
+                                    <div class="mat">Fisica</div>
+                                    <div class="mat">Matematicas</div>
+                                    <div class="mat">Tecnologia de la Representacion</div>
+
+                                </div>
+                                <p class="taller">Taller</p>
+                                <div id="pri" class="año2">
+                                    <div class="mat">Taller de Tecnologia y Control</div>
+                                    <div class="mat">Taller de Computacion</div>
+                                </div>
+                            </div>
+    
+                            <div class="año">
+                                <p class="esp">GADO</p>
+                                <div id="terAdm" class="com">
+                                    <div class="mat">Historia 3ro 1ra</div>
+                                    <div class="mat">Geografía</div>
+                                    <div class="mat">Educación Física</div>
+                                    <div class="mat">Educación Ciudadana</div>
+                                    <div class="mat">Inglés</div>
+                                    <div class="mat">Lengua y Literatura</div>
+                                    <div class="mat">Matemática</div>
+                                    <div class="mat">Física</div>
+                                    <div class="mat">Tecnología de la Representación</div>
+                                    <div class="mat">Química</div>
+                                </div>
+                                <p class="taller">Taller</p>
+                                <div id="pri" class="año2">
+                                    <div class="mat">Taller Tecnología y de Control</div>
+                                    <div class="mat">Taller de la Especialidad</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <h2>4° Año</h2>
+                        <div class="flex">
+                            <div class="año">
+                                <p class="esp">Computacion</p>
+                                <div id="cuarCom" class="com">
+                                        <div class="mat">Hisotria</div>
+                                        <div class="mat">Geografia</div>
+                                        <div class="mat">Educacion Fisica</div>
+                                        <div class="mat">Ingles</div>
+                                        <div class="mat">Lengua y Literatura</div>
+                                        <div class="mat">Matematica</div>
+                                        <div class="mat">Base de Datos</div>
+                                        <div class="mat">Logica Computacional</div>
+                                        <div class="mat">Proyecto Informatico I</div>
+                                </div>
+                                <p class="taller">Taller</p>
+                                <div id="pri" class="año2">
+                                    <div class="mat">Lab. de Altgoritmos y Estr. de Datos</div>
+                                    <div class="mat">Organizacion de las Computadoras</div>
+                                </div>
+                            </div>
+                            <div class="año">
+                                <p class="esp">GADO</p>
+                                <div id="cuarAdm" class="com">
+                                    <div class="mat">Inglés Nivel Alto</div>
+                                    <div class="mat">Educación Física</div>
+                                    <div class="mat">Ciudadanía y Trabajo</div>
+                                    <div class="mat">Lengua y Literatura</div>
+                                    <div class="mat">Matemática</div>
+                                    <div class="mat">Química Aplicada</div>
+                                    <div class="mat">Computación Aplicada I</div>
+                                    <div class="mat">Contabilidad I</div>
+                                    <div class="mat">Introducción a la Economía</div>
+                                    <div class="mat">Historia de la Ind y el Com</div>
+                                    <div class="mat">Matemática Financiera</div>
+                                    <div class="mat">Teoría de las Organizaciones</div>
+                                </div>
+                                <p class="taller">Taller</p>
+                                <div id="pri" class="año2">
+                                    <div class="mat">Taller Administrativo Contable I</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <h2>5° Año</h2>
+                        <div class="flex">
+                            <div class="año">
+                                <p class="esp">Computacion</p>
+                                <div id="quinCom" class="com">
+                                        <div class="mat">Educacion Fisica</div>
+                                        <div class="mat">Lengua y Literatura</div>
+                                        <div class="mat">Economia y Gestion de las Organizaciones</div>
+                                        <div class="mat">Ingles</div>
+                                        <div class="mat">Matematica</div>
+                                        <div class="mat">Analisis de Sistemas</div>
+                                        <div class="mat">Adm. y Gestion de Base de Datos</div>
+                                        <div class="mat">Lab. de Programacion Orientado a Objetos</div>
+                                        <div class="mat">Redes</div>
+                                        <div class="mat">Proyecto Informatico II</div>
+                                </div>
+                                <p class="taller">Taller</p>
+                                <div id="pri" class="año2">
+                                    <div class="mat">Taller1</div>
+                                    <div class="mat">Taller2</div>
+                                </div>
+                            </div>
+                            <div class="año">
+                                <p class="esp">GADO</p>
+                                <div id="quinAdm" class="com">
+                                        <div class="mat">Educación Física</div>
+                                        <div class="mat">Inglés</div>
+                                        <div class="mat">Lengua y Literatura</div>
+                                        <div class="mat">Matemática</div>
+                                        <div class="mat">Economía y Gestión de las Organizaciones</div>
+                                        <div class="mat">Computación Aplicada II</div>
+                                        <div class="mat">Introducción al Derecho</div>
+                                        <div class="mat">Geografía Económica Argentina</div>
+                                        <div class="mat">Contabilidad II</div>
+                                        <div class="mat">Costos</div>
+                                        <div class="mat">Organización de la Producción</div>
+                                        <div class="mat">Psicología de las Organizaciones</div>Psicología de las Organizaciones
+                                </div>
+                                <p class="taller">Taller</p>
+                                <div id="pri" class="año2">
+                                    <div class="mat">Taller Administrativo Contable II</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <h2>6° Año</h2>
+                        <div class="flex">
+                            <div class="año">
+                                <p class="esp">Computacion</p>
+                                <div id="sexCom" class="com">
+                                    <div class="mat">Educacion Fisica</div>
+                                    <div class="mat">Ingles</div>
+                                    <div class="mat">Ciudadania y Trabajo</div>
+                                    <div class="mat">Ciencia y Tecnologia</div>
+                                    <div class="mat">Matematica</div>
+                                    <div class="mat">Gestion de los Proc. Productivos</div>
+                                    <div class="mat">Desarrollo de Sistemas</div>
+                                    <div class="mat">Programacion Sobre Redes</div>
+                                    <div class="mat">Administracion de Sist. y reservados</div>
+                                </div>
+                                <p class="taller">Taller</p>
+                                <div id="pri" class="año2">
+                                    <div class="mat">Praticas Profesionalizantes</div>
+                                    <div class="mat">Taller2</div>
+                                </div>
+                            </div>
+                            <div class="año">
+                                <p class="esp">GADO</p>
+                                <div id="sexAdm" class="com">
+                                        <div class="mat">Matematicas</div>
+                                        <div class="mat">Inglés Nivel Alto</div>
+                                        <div class="mat">Educación Física</div>
+                                        <div class="mat">Inglés</div>
+                                        <div class="mat">Ciencia y Tecnología</div>
+                                        <div class="mat">Matemática</div>
+                                        <div class="mat">Gestión de los Procesos Productivos</div>
+                                        <div class="mat">Computación Aplicada III</div>
+                                        <div class="mat">Derecho Comercial Administrativo</div>
+                                        <div class="mat">Bancos y Finanzas</div>
+                                        <div class="mat">Estados Contables</div>
+                                        <div class="mat">Impuestos</div>
+                                        <div class="mat">Marketing</div>
+                                        <div class="mat">Recursos Humanos</div>
+                                </div>
+                                <p class="taller">Taller</p>
+                                <div id="pri" class="año2">
+                                    <div class="mat">Prácticas Profesionalizantes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+       <script src="./js/java.js"></script>
+       <script src="./js/java.js"></script>
+    
+    <script>
+        const containers = document.querySelectorAll('.tooltip-container');
+        
+        containers.forEach(container => {
+            const tooltip = container.querySelector('.tooltip');
+            
+            container.addEventListener('mouseenter', () => {
+                tooltip.classList.add('show');
+            });
+
+            container.addEventListener('mouseleave', () => {
+                tooltip.classList.remove('show');
+            });
+        });
+    </script>
+    
+    <footer>
+       <footer>
+        <div id="footer-img">
+            <img src="img/cropped-escuela.png" alt="">
+            <p class="t">Escuela Tecnica N°24</p>
+            <p class="t">Defensa de Buenos Aires</p>
+        </div>
+        <div class="border"></div>
+        <div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/radioet24?igsh=MWplOG1nejc4czNhZg==" class="social-icon"></a>
+                    <a href="https://www.instagram.com/radioet24?igsh=MWplOG1nejc4czNhZg==">radioet24</a>
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4" class="social-icon"></a>
+                    <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4">6topp.et24</a>
+                </div>
+        </div>
+        <div class="border"></div>
+        <ul class="footer-menu-container">
+            <li class="menu-item"><a href="index.html">Inicio</a></li>
+            <li class="menu-item"><a href="about.html">Acerca de</a></li>
+            <li class="menu-item"><a href="services.html">Especialidades</a></li>
+            <li class="menu-item"><a href="contact.html">Contactos</a></li> 
+            <li class="menu-item"><a href="https://et24de17-caba.edu.ar/">Plataforma</a></li> 
+        </ul>
+    </footer>
+    <footer>
+        <span class="copyright">&copy;2024, Escuela n°24. Todos los derechos reservados..</span>
+    </footer>
+    </div>
+    <script>
+        const container = document.querySelector('.tooltip-container');
+        const tooltip = document.querySelector('.tooltip');
+    
+        container.addEventListener('mouseenter', () => {
+            tooltip.classList.add('show');
+        });
+    
+        container.addEventListener('mouseleave', () => {
+            tooltip.classList.remove('show');
+        });
+    </script>
+</body>
+</html>
