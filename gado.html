@@ -17,6 +17,21 @@
     justify-content: space-between; /* Distribuye el espacio uniformemente */
     gap: 15px;
     width: 100%;
+    .typing-text {
+    text-align: justify;
+    opacity: 0;
+    white-space: pre-line;
+    animation: typing 6s steps(60) forwards;
+}
+
+@keyframes typing {
+    from { 
+        opacity: 0;
+    }
+    to { 
+        opacity: 1;
+    }
+}
 }
 
 .blog-1 {
@@ -82,49 +97,47 @@
         </main>
 
         <section class="escuela">
-            <!--         <img class="escuela-img" src="./img/bg2.png" alt="">
-             -->        <div class="escuela-content container">
-                        <h2>Alcance del Titulo</h2>
-                        <p class="txt-p">
-                            El Técnico Superior en Administración planifica, coordina y controla recursos en áreas administrativas.
-                            Está capacitado para gestionar procesos administrativos, contables, compras, ventas, recursos financieros y humanos.
-                            Domina herramientas informáticas y software de gestión específicos del campo.
-                            Puede tomar decisiones proactivamente y supervisar personal a su cargo.
-                            Desarrolla habilidades de liderazgo y trabajo en equipo en entornos competitivos.
-                            En grandes organizaciones, opera en áreas funcionales y puede ocupar mandos medios.
-                            En PYMES, puede gestionar toda la organización y tomar decisiones estratégicas.
-                            Está preparado para planificar y gestionar sus propios emprendimientos.
-                            Su formación es sólida y orientada a resolver problemas del contexto económico-social.
-                            Actúa bajo principios éticos y criterios de responsabilidad social.
-                        </p>
-                        <!-- <div class="escuela-group">
-                            <div class="escuela-1">
-                                <img src="./img/c1.png" alt="">
-                                <h3>Escuela Lorem</h3>
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
-                                </p>
-                            </div>
-                            <div class="escuela-1">
-                                <img src="./img/c2.png" alt="">
-                                <h3>Escuela Lorem</h3>
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
-                                </p>
-                            </div>
-                            <div class="escuela-1">
-                                <img src="./img/c3.png" alt="">
-                                <h3>Escuela Lorem</h3>
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
-                                </p>
-                            </div>
-                        </div> -->
-            <!--             <a href="#" class="btn-1">Informacion</a>
-             -->        </div>
+            <div class="escuela-content container">
+                <h2>Perfil Profesional</h2>
+                <p class="typing-text">
+                    El Técnico Superior en Administración es un profesional altamente capacitado para desempeñar un rol clave en la planificación, coordinación y control de recursos en diversas áreas administrativas de una organización. Su formación integral le permite gestionar eficazmente procesos vinculados a la administración general, contabilidad, compras, ventas, y la administración de recursos financieros y humanos. Este profesional posee un dominio avanzado de herramientas informáticas y software de gestión especializados, lo que le facilita adaptarse a los constantes cambios tecnológicos y a las exigencias del mercado laboral actual.
+                </p>
+                <p class="typing-text" style="animation-delay: 2s;">
+                    Además, cuenta con una visión proactiva que le permite tomar decisiones estratégicas y gestionar equipos de trabajo con eficiencia. Su capacidad de liderazgo y sus habilidades para el trabajo en equipo son esenciales para desenvolverse con éxito en entornos laborales altamente competitivos, donde la innovación y la adaptabilidad son fundamentales. En grandes organizaciones, puede integrarse en áreas funcionales específicas, ocupando puestos de mando medio y colaborando estrechamente con la alta gerencia para alcanzar los objetivos institucionales.
+                </p>
+                <p class="typing-text" style="animation-delay: 4s;">
+                    Por otro lado, en pequeñas y medianas empresas (PYMES), su versatilidad lo posiciona como un gestor integral capaz de administrar toda la organización. Esto incluye desde la planificación estratégica hasta la toma de decisiones cruciales para el desarrollo y crecimiento sostenible del negocio. Asimismo, está preparado para planificar, gestionar y dirigir sus propios emprendimientos, aplicando principios de innovación, creatividad y análisis crítico.
+                </p>
+                <p class="typing-text" style="animation-delay: 6s;">
+                    La formación del Técnico Superior en Administración se destaca por ser sólida, práctica y orientada a la resolución de problemas en el contexto económico y social actual. Esta preparación le permite comprender y responder a los desafíos del entorno de manera ética y con un fuerte compromiso con los valores de responsabilidad social. Su accionar profesional está guiado por principios éticos, respetando tanto las normativas legales como los intereses de la comunidad en la que se desenvuelve.
+                </p>
+                <p class="typing-text" style="animation-delay: 8s;">
+                    El Técnico Superior en Administración es un profesional versátil, capacitado para desempeñarse en múltiples contextos laborales, desde grandes corporaciones hasta pequeñas empresas, e incluso como emprendedor independiente. Su capacidad para integrar conocimientos teóricos y prácticos lo convierte en un actor relevante en la mejora continua y el desarrollo sostenible de las organizaciones en las que participa.
+                </p>
+            </div>
             <hr>
-            
-        </section>
+         </section>
+         
+         <style>
+         .typing-text {
+            text-align: justify;
+            opacity: 0;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            animation: typing 3s ease-out forwards;
+         }
+         
+         @keyframes typing {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+         }
+         </style>
                 
                 <main class="services">
                     <div class="services-content container">
