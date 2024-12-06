@@ -30,6 +30,25 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+.typing-text {
+    text-align: justify;
+    opacity: 0;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    animation: typing 3s ease-out forwards;
+}
+
+@keyframes typing {
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
     </style>
     
 </head>
@@ -82,93 +101,50 @@
         </main>
 
         <section class="escuela">
-            <!--         <img class="escuela-img" src="./img/bg2.png" alt="">
-             -->        <div class="escuela-content container">
-                        <h2>Historia</h2>
-                        <p class="txt-p">
-                            Esta Escuela se crea el 1 de abril de 1947 como Escuela de Perfeccionamiento para Mujeres. A su vez, se dan cursos de aprendizaje profesional de Cocina, Corte y Confección y de Práctica Fabril Comercial.
-            
-                            En el año 1950 se dejan de dictar los cursos de cocina y costura y se va delineando la futura especialidad con ciclos relacionados con o comercial: Impuestos, Técnica Bancaria y Dibujo Publicitario. El edificio escolar de aquella época era una vieja casona de dos plantas, con salones corridos que daban a una galería.
-            
-                            En el año 1966 se crea el Ciclo de Práctica Comercial. Y en 1969 se implementa el Ciclo Superior de Administración de Empresas. A partir de ese momento se construye el nuevo edificio con cuatro plantas en diferentes niveles, dotado de microcine, dos laboratorios y un salón para el Gabinete Contable.
-            
-                            En 1977 todavía la población era mayoritariamente femenina con la incorporación de algunos varones. Sin embargo, los varones igualaron a las mujeres en poco tiempo: el ingreso directo a la Facultad de Ciencias Económicas de la UBA era un buen aliciente para el año de más que cursaban. En la actualidad dicho ingreso directo fue eliminado y la población escolar es mayoritariamente masculina.
-            
-                            En el año 1983 se crea el Sistema Dual en Administración de Empresas. Algunos estudiantes deciden al final del primer ciclo iniciar una experiencia compartida entre el mundo del trabajo y la escuela, subsistiendo ambos sistemas hasta el año 2001. En dicho año, y en el marco de la crisis socioeconómica por la que atravesaba el país, eran numerosas las dificultades para encontrar instituciones en las que los alumnos pudieran desarrollar su práctica laboral, se cierra el plan.
-                        </p>
-                        <!-- <div class="escuela-group">
-                            <div class="escuela-1">
-                                <img src="./img/c1.png" alt="">
-                                <h3>Escuela Lorem</h3>
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
-                                </p>
-                            </div>
-                            <div class="escuela-1">
-                                <img src="./img/c2.png" alt="">
-                                <h3>Escuela Lorem</h3>
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
-                                </p>
-                            </div>
-                            <div class="escuela-1">
-                                <img src="./img/c3.png" alt="">
-                                <h3>Escuela Lorem</h3>
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corrupti itaque nostrum
-                                </p>
-                            </div>
-                        </div> -->
-            <!--             <a href="#" class="btn-1">Informacion</a>
-             -->        </div>
+            <div class="escuela-content container">
+                <h2>Historia</h2>
+                <p class="typing-text">
+                    Esta Escuela se crea el 1 de abril de 1947 como Escuela de Perfeccionamiento para Mujeres. A su vez, se dan cursos de aprendizaje profesional de Cocina, Corte y Confección y de Práctica Fabril Comercial.
+                </p>
+                <p class="typing-text" style="animation-delay: 2s;">
+                    En el año 1950 se dejan de dictar los cursos de cocina y costura y se va delineando la futura especialidad con ciclos relacionados con o comercial: Impuestos, Técnica Bancaria y Dibujo Publicitario. El edificio escolar de aquella época era una vieja casona de dos plantas, con salones corridos que daban a una galería.
+                </p>
+                <p class="typing-text" style="animation-delay: 4s;">
+                    En el año 1966 se crea el Ciclo de Práctica Comercial. Y en 1969 se implementa el Ciclo Superior de Administración de Empresas. A partir de ese momento se construye el nuevo edificio con cuatro plantas en diferentes niveles, dotado de microcine, dos laboratorios y un salón para el Gabinete Contable.
+                </p>
+                <p class="typing-text" style="animation-delay: 6s;">
+                    En 1977 todavía la población era mayoritariamente femenina con la incorporación de algunos varones. Sin embargo, los varones igualaron a las mujeres en poco tiempo: el ingreso directo a la Facultad de Ciencias Económicas de la UBA era un buen aliciente para el año de más que cursaban. En la actualidad dicho ingreso directo fue eliminado y la población escolar es mayoritariamente masculina.
+                </p>
+                <p class="typing-text" style="animation-delay: 8s;">
+                    En el año 1983 se crea el Sistema Dual en Administración de Empresas. Algunos estudiantes deciden al final del primer ciclo iniciar una experiencia compartida entre el mundo del trabajo y la escuela, subsistiendo ambos sistemas hasta el año 2001. En dicho año, y en el marco de la crisis socioeconómica por la que atravesaba el país, eran numerosas las dificultades para encontrar instituciones en las que los alumnos pudieran desarrollar su práctica laboral, se cierra el plan.
+                </p>
+            </div>
             <hr>
-             <div class="escuela-content container">
-                        <h2>Nuestra Escuela</h2>
-                        <p class="txt-p">
-                            La Escuela Técnica N° 24 es una institución pública que se enfoca en ofrecer una formación técnica orientada a diferentes disciplinas industriales y tecnológicas. Su oferta educativa incluye carreras técnicas como Electrónica, Mecánica, Computación, y Electricidad, entre otras. Los estudiantes reciben una formación integral que combina conocimientos teóricos con una fuerte orientación práctica, preparando a los graduados tanto para ingresar al mercado laboral como para continuar estudios superiores en ingeniería u otras áreas.
-            
-                            La escuela se destaca por sus talleres equipados, donde los alumnos realizan actividades prácticas que complementan su formación académica. Además, cuenta con laboratorios especializados y docentes capacitados que guían a los estudiantes en el manejo de herramientas y tecnologías actuales.
-                            
-                            La misión de la Escuela Técnica N° 24 es formar técnicos con una sólida preparación tanto en los aspectos teóricos como en los prácticos, brindando las competencias necesarias para enfrentar los desafíos del mundo laboral moderno. La institución también promueve valores como la disciplina, el trabajo en equipo y la responsabilidad.
-                         </p>
-                   </div>
+            <div class="escuela-content container">
+                <h2>Nuestra Escuela</h2>
+                <p class="typing-text" style="animation-delay: 10s;">
+                    La Escuela Técnica N° 24 es una institución pública que se enfoca en ofrecer una formación técnica orientada a diferentes disciplinas industriales y tecnológicas. Su oferta educativa incluye carreras técnicas como Electrónica, Mecánica, Computación, y Electricidad, entre otras. Los estudiantes reciben una formación integral que combina conocimientos teóricos con una fuerte orientación práctica, preparando a los graduados tanto para ingresar al mercado laboral como para continuar estudios superiores en ingeniería u otras áreas.
+                </p>
+                <p class="typing-text" style="animation-delay: 12s;">
+                    La escuela se destaca por sus talleres equipados, donde los alumnos realizan actividades prácticas que complementan su formación académica. Además, cuenta con laboratorios especializados y docentes capacitados que guían a los estudiantes en el manejo de herramientas y tecnologías actuales.
+                </p>
+                <p class="typing-text" style="animation-delay: 14s;">
+                    La misión de la Escuela Técnica N° 24 es formar técnicos con una sólida preparación tanto en los aspectos teóricos como en los prácticos, brindando las competencias necesarias para enfrentar los desafíos del mundo laboral moderno. La institución también promueve valores como la disciplina, el trabajo en equipo y la responsabilidad.
+                </p>
+            </div>
         </section>
                 
                 <main class="services">
                     <div class="services-content container">
                         <img src="./img/icons8-vista-360-96.png" alt="">
                         <h2>Recorre la Escuela</h2>
-                        <!-- <div class="services-group">
-            
-                            <div class="services-1">
-                                <img src="./img/i1.svg" alt="">
-                                <h3>Services 1</h3>
-                            </div>
-                            <div class="services-1">
-                                <img src="./img/i2.svg" alt="">
-                                <h3>Services 2</h3>
-                            </div>
-                            <div class="services-1">
-                                <img src="./img/i3.svg" alt="">
-                                <h3>Services 3</h3>
-                            </div>
-                        </div> -->
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores animi iure repudiandae aperiam deserunt voluptates obcaecati, consectetur necessitatibus rerum doloremque provident officia nesciunt natus iste.
-                        </p> -->
+                      
                         <a href="https://cdn2.buenosaires.gob.ar/bsas/establecimientos-educativos/tour_360/020090300/360_020090300.html" class="btn-1" target="_blank">Ver Escuela</a>
                     </div>
                 </main>
                
             
-              <!--   <section class="general">
-                    <div class="general-3"></div>
-                    <div class="general-1">
-                        <h2>totam similique</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores animi iure repudiandae aperiam deserunt voluptates obcaecati, consectetur necessitatibus rerum doloremque provident officia nesciunt natus iste.
-                        </p>
-                        <a href="#" class="btn-1">Informacion</a>
-                    </div>
-                </section> -->
+              
                 
                 <section class="blog container">
                     <h2>Autoridades</h2>
@@ -191,23 +167,23 @@
 
                         <div class="blog-1">
                             <img src="./img/laura.png" alt="Regente">
-                            <h3>Regente TM</h3>
+                            <h3>Regente Cultura</h3>
                             <p class="grey">
                                 Lic. Prof. Maria Laura Araneo<br>
                             </p>
                         </div>
                         <div class="blog-1">
                             <img src="./img/rosana.png" alt="Director">
-                            <h3>Regente TT</h3>
+                            <h3>Regente Técnico</h3>
                             <p class="grey">
                                 Prof. Rosana Garreto<br>
                             </p>
                         </div>
                         <div class="blog-1">
                             <img src="./img/gi.png" alt="Regente">
-                            <h3>Regente TN</h3>
+                            <h3>Regente Técnico</h3>
                             <p class="grey">
-                                Cdora. Prof. Giselle Cespedes<br>
+                                Cdora. Prof. Giselle Céspedes<br>
                             </p>
                         </div>
                     </div>
@@ -231,7 +207,7 @@
                 </div>
                 <div class="redes">
                     <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4" class="social-icon"></a>
-                    <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4">6topp.et24</a>
+                    <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4">@et24.pp</a>
                 </div>
         </div>
         <div class="border"></div>

@@ -70,6 +70,65 @@
                 padding: 8px 15px;
             }
         }
+
+        .flex {
+           display: flex;
+           gap: 20px;
+           justify-content: space-between;
+       }
+       
+       .año {
+           flex: 1;
+           margin: 10px;
+           padding: 15px;
+           background: #f5f5f5;
+           border-radius: 8px;
+       }
+
+       .mat {
+           background: white;
+           padding: 10px 15px;
+           margin: 8px 0;
+           border-radius: 4px;
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+       }
+
+       .esp {
+           font-size: 1.2em;
+           font-weight: bold;
+           text-align: center;
+           padding: 10px;
+           background: #0066cc;
+           color: white;
+           border-radius: 4px;
+           margin-bottom: 15px;
+       }
+
+       h1, h2 {
+           text-align: center;
+           margin: 20px 0;
+       }
+
+       .taller, .taller2 {
+           text-align: center;
+           font-weight: bold;
+           margin: 15px 0;
+           padding: 8px;
+           background: #ffe100;
+           border-radius: 4px;
+       }
+
+       #tabla {
+           max-width: 1400px;
+           margin: 0 auto;
+           padding: 20px;
+       }
+
+       .año2, .año3 {
+           background: #f9f9f9;
+           padding: 10px;
+           border-radius: 4px;
+       }
     </style>
 </head>
 <body>
@@ -142,231 +201,236 @@
             <section id="hero">
                 <div id="cont">
                     <div id="tabla">
-                        <h2 style="margin-left: 20px; margin-right: 20px;">Espacios Curriculares</h2>
-                        <h1>1° Ciclo</h1>
-                        <!-- PRIMERO Y SEGUNDO -->
+                        <h2>ESPACIOS CURRICULARES</h2>
+                        <h1>PRIMER CICLO (GADO y COMPUTACIÓN)</h1>
+                        
                         <div class="flex" id="ps">
-                            <div style="width: 120%;">
-                                <h2 style="margin-left: 20px; margin-right: 20px;">1° Año</h2>
-                                <div id="pri" class="año">
-                                    <div class="mat">Turoria</div>
-                                    <div class="mat">Lengua y Literatura</div>
-                                    <div class="mat">Ingles</div>
-                                    <div class="mat">Historia</div>
-                                    <div class="mat">Geografia</div>
-                                    <div class="mat">Educacion Ciudadana</div>
-                                    <div class="mat">Educacion Fisica</div>
-                                    <div class="mat">Biologia</div>
-                                    <div class="mat">Educacion Artistica</div>
-                                    <div class="mat">Matematicas</div>
-                                </div>
-                                <p class="taller2">Taller</p>
-                                <div id="pri" class="año3">
-                                    <div class="mat">Taller1</div>
-                                    <div class="mat">Tecnologia de la Representacion</div>
+                            <!-- 1° Año -->
+                            <div class="año">
+                                <h2>1° AÑO</h2>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">TECNOLOGÍA DE LA REPRESENTACIÓN</div>
+                                <div class="mat">LENGUA Y LITERATURA</div>
+                                <div class="mat">BIOLOGÍA</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">EDUCACIÓN ARTÍSTICA</div>
+                                <div class="mat">EDUCACIÓN CIUDADANA</div>
+                                <div class="mat">HISTORIA</div>
+                                <div class="mat">EDUCACIÓN FÍSICA</div>
+                                <div class="mat">GEOGRAFÍA</div>
+                                
+                                <p class="taller2">TALLER</p>
+                                <div class="año3">
+                                    <div class="mat">TÉC. DE LA PRODUCCIÓN</div>
+                                    <div class="mat">TÉCNICA DE BASE</div>
+                                    <div class="mat">PROYECTO</div>
                                 </div>
                             </div>
-                            
-                            <div style="width: 120%;">
-                                <h2 style="margin-left: 20px; margin-right: 20px;">2° Año</h2>
-                                <div id="seg" class="año">
-                                    <div class="mat">Lengua y Literatura</div>
-                                    <div class="mat">Ingles</div>
-                                    <div class="mat">Historia</div>
-                                    <div class="mat">Geografia</div>
-                                    <div class="mat">Educacion Ciudadana</div>
-                                    <div class="mat">Educacion Fisica</div>
-                                    <div class="mat">Biologia</div>
-                                    <div class="mat">Fisica</div>
-                                    <div class="mat">Matematicas</div>
-                                </div>
-                                <p class="taller2">Taller</p>
-                                <div id="pri" class="año3">
-                                    <div class="mat">Taller</div>
-                                    <div class="mat">Tecnologia de la Representacion</div>
+         
+                            <!-- 2° Año -->
+                            <div class="año">
+                                <h2>2° AÑO</h2>
+                                <div class="mat">FÍSICA</div>
+                                <div class="mat">LENGUA Y LITERATURA</div>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">TEC. REPRESENTACIÓN</div>
+                                <div class="mat">BIOLOGÍA</div>
+                                <div class="mat">GEOGRAFÍA</div>
+                                <div class="mat">ED. CIUDADANA</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">HISTORIA</div>
+                                <div class="mat">ED. FÍSICA</div>
+                                
+                                <p class="taller2">TALLER</p>
+                                <div class="año3">
+                                    <div class="mat">TÉC. DE LA PRODUCCIÓN</div>
+                                    <div class="mat">TÉCNICA DE BASE</div>
+                                    <div class="mat">PROYECTO</div>
                                 </div>
                             </div>
                         </div>
-    
-                        <h1>2° Ciclo</h1>
-                        <!-- ESPECIALIDAD -->
-                        <h2>3° Año</h2>
+         
+                        <h1>SEGUNDO CICLO</h1>
+                        
+                        <!-- 3° Año -->
+                        <h2>3° AÑO</h2>
                         <div class="flex">
+                            <!-- Computación -->
                             <div class="año">
-                                <p class="esp">Computacion</p>
-                                <div id="terCom" class="com">
-                                    <div class="mat">Lengua y Literatura</div>
-                                    <div class="mat">Ingles</div>
-                                    <div class="mat">Historia</div>
-                                    <div class="mat">Geografia</div>
-                                    <div class="mat">Educacion Ciudadana</div>
-                                    <div class="mat">Educacion Fisica</div>
-                                    <div class="mat">Quimica</div>
-                                    <div class="mat">Fisica</div>
-                                    <div class="mat">Matematicas</div>
-                                    <div class="mat">Tecnologia de la Representacion</div>
-
-                                </div>
-                                <p class="taller">Taller</p>
-                                <div id="pri" class="año2">
-                                    <div class="mat">Taller de Tecnologia y Control</div>
-                                    <div class="mat">Taller de Computacion</div>
+                                <p class="esp">COMPUTACIÓN</p>
+                                <div class="mat">LENGUA Y LITERATURA</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">HISTORIA</div>
+                                <div class="mat">GEOGRAFÍA</div>
+                                <div class="mat">EDUCACIÓN CIUDADANA</div>
+                                <div class="mat">EDUCACIÓN FÍSICA</div>
+                                <div class="mat">QUÍMICA</div>
+                                <div class="mat">FÍSICA</div>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">TEC. DE LA REPRESENTACIÓN</div>
+                                
+                                <p class="taller">TALLER</p>
+                                <div class="año2">
+                                    <div class="mat">TALLER DE TECNOLOGÍA Y CONTROL</div>
+                                    <div class="mat">TALLER DE COMPUTACIÓN</div>
                                 </div>
                             </div>
-    
+         
+                            <!-- GADO -->
                             <div class="año">
                                 <p class="esp">GADO</p>
-                                <div id="terAdm" class="com">
-                                    <div class="mat">Historia 3ro 1ra</div>
-                                    <div class="mat">Geografía</div>
-                                    <div class="mat">Educación Física</div>
-                                    <div class="mat">Educación Ciudadana</div>
-                                    <div class="mat">Inglés</div>
-                                    <div class="mat">Lengua y Literatura</div>
-                                    <div class="mat">Matemática</div>
-                                    <div class="mat">Física</div>
-                                    <div class="mat">Tecnología de la Representación</div>
-                                    <div class="mat">Química</div>
-                                </div>
-                                <p class="taller">Taller</p>
-                                <div id="pri" class="año2">
-                                    <div class="mat">Taller Tecnología y de Control</div>
-                                    <div class="mat">Taller de la Especialidad</div>
+                                <div class="mat">HISTORIA</div>
+                                <div class="mat">GEOGRAFÍA</div>
+                                <div class="mat">ED. FÍSICA</div>
+                                <div class="mat">ED. CIUDADANA</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">LENGUA Y LITERATURA</div>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">FÍSICA</div>
+                                <div class="mat">TEC. REPRESENTACIÓN</div>
+                                <div class="mat">QUÍMICA</div>
+                                
+                                <p class="taller">TALLER</p>
+                                <div class="año2">
+                                    <div class="mat">TALLER TECNOLOGÍA Y DE CONTROL</div>
+                                    <div class="mat">TALLER DE LA ESPECIALIDAD</div>
                                 </div>
                             </div>
                         </div>
-    
-                        <h2>4° Año</h2>
+         
+                        <!-- 4° Año -->
+                        <h2>4° AÑO</h2>
                         <div class="flex">
+                            <!-- Computación -->
                             <div class="año">
-                                <p class="esp">Computacion</p>
-                                <div id="cuarCom" class="com">
-                                        <div class="mat">Hisotria</div>
-                                        <div class="mat">Geografia</div>
-                                        <div class="mat">Educacion Fisica</div>
-                                        <div class="mat">Ingles</div>
-                                        <div class="mat">Lengua y Literatura</div>
-                                        <div class="mat">Matematica</div>
-                                        <div class="mat">Base de Datos</div>
-                                        <div class="mat">Logica Computacional</div>
-                                        <div class="mat">Proyecto Informatico I</div>
-                                </div>
-                                <p class="taller">Taller</p>
-                                <div id="pri" class="año2">
-                                    <div class="mat">Lab. de Altgoritmos y Estr. de Datos</div>
-                                    <div class="mat">Organizacion de las Computadoras</div>
+                                <p class="esp">COMPUTACIÓN</p>
+                                <div class="mat">HISTORIA</div>
+                                <div class="mat">GEOGRAFÍA</div>
+                                <div class="mat">EDUCACIÓN FÍSICA</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">LENGUA Y LITERATURA</div>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">BASE DE DATOS</div>
+                                <div class="mat">LÓGICA COMPUTACIONAL</div>
+                                <div class="mat">PROYECTO INFORMÁTICO I</div>
+                                
+                                <p class="taller">TALLER</p>
+                                <div class="año2">
+                                    <div class="mat">LAB. DE ALGORITMOS Y ESTR. DE DATOS</div>
+                                    <div class="mat">ORGANIZACIÓN DE LAS COMPUTADORAS</div>
                                 </div>
                             </div>
+         
+                            <!-- GADO -->
                             <div class="año">
                                 <p class="esp">GADO</p>
-                                <div id="cuarAdm" class="com">
-                                    <div class="mat">Inglés Nivel Alto</div>
-                                    <div class="mat">Educación Física</div>
-                                    <div class="mat">Ciudadanía y Trabajo</div>
-                                    <div class="mat">Lengua y Literatura</div>
-                                    <div class="mat">Matemática</div>
-                                    <div class="mat">Química Aplicada</div>
-                                    <div class="mat">Computación Aplicada I</div>
-                                    <div class="mat">Contabilidad I</div>
-                                    <div class="mat">Introducción a la Economía</div>
-                                    <div class="mat">Historia de la Ind y el Com</div>
-                                    <div class="mat">Matemática Financiera</div>
-                                    <div class="mat">Teoría de las Organizaciones</div>
-                                </div>
-                                <p class="taller">Taller</p>
-                                <div id="pri" class="año2">
-                                    <div class="mat">Taller Administrativo Contable I</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">ED. FÍSICA</div>
+                                <div class="mat">CIUDADANÍA Y TRABAJO</div>
+                                <div class="mat">LENGUA Y LITERATURA</div>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">QUÍMICA APLICADA</div>
+                                <div class="mat">COMP. APLICADA I</div>
+                                <div class="mat">CONTABILIDAD I</div>
+                                <div class="mat">INT. A LA ECONOMÍA</div>
+                                <div class="mat">HISTORIA DE LA IND. Y EL COM.</div>
+                                <div class="mat">MATEMÁTICA FINANCIERA</div>
+                                <div class="mat">TEORÍA DE LAS ORG.</div>
+                                
+                                <p class="taller">TALLER</p>
+                                <div class="año2">
+                                    <div class="mat">TALLER ADMINISTRATIVO CONT. I</div>
                                 </div>
                             </div>
                         </div>
-    
-                        <h2>5° Año</h2>
+         
+                        <!-- 5° Año -->
+                        <h2>5° AÑO</h2>
                         <div class="flex">
+                            <!-- Computación -->
                             <div class="año">
-                                <p class="esp">Computacion</p>
-                                <div id="quinCom" class="com">
-                                        <div class="mat">Educacion Fisica</div>
-                                        <div class="mat">Lengua y Literatura</div>
-                                        <div class="mat">Economia y Gestion de las Organizaciones</div>
-                                        <div class="mat">Ingles</div>
-                                        <div class="mat">Matematica</div>
-                                        <div class="mat">Analisis de Sistemas</div>
-                                        <div class="mat">Adm. y Gestion de Base de Datos</div>
-                                        <div class="mat">Lab. de Programacion Orientado a Objetos</div>
-                                        <div class="mat">Redes</div>
-                                        <div class="mat">Proyecto Informatico II</div>
-                                </div>
-                                <p class="taller">Taller</p>
-                                <div id="pri" class="año2">
-                                    <div class="mat">Taller1</div>
-                                    <div class="mat">Taller2</div>
+                                <p class="esp">COMPUTACIÓN</p>
+                                <div class="mat">EDUCACIÓN FÍSICA</div>
+                                <div class="mat">LENGUA Y LITERATURA</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">MATEMÁTICA</div>
+                                <div class="mat">ANÁLISIS DE SISTEMAS</div>
+                                <div class="mat">ADM. Y GESTIÓN DE BASE DE DATOS</div>
+                                <div class="mat">LAB. DE PROGRAMACIÓN ORIENTADO A OBJETOS</div>
+                                <div class="mat">REDES</div>
+                                <div class="mat">PROYECTO INFORMÁTICO II</div>
+                                
+                                <p class="taller">TALLER</p>
+                                <div class="año2">
+                                    <div class="mat">TALLER1</div>
+                                    <div class="mat">TALLER2</div>
                                 </div>
                             </div>
+         
+                            <!-- GADO -->
                             <div class="año">
                                 <p class="esp">GADO</p>
-                                <div id="quinAdm" class="com">
-                                        <div class="mat">Educación Física</div>
-                                        <div class="mat">Inglés</div>
-                                        <div class="mat">Lengua y Literatura</div>
-                                        <div class="mat">Matemática</div>
-                                        <div class="mat">Economía y Gestión de las Organizaciones</div>
-                                        <div class="mat">Computación Aplicada II</div>
-                                        <div class="mat">Introducción al Derecho</div>
-                                        <div class="mat">Geografía Económica Argentina</div>
-                                        <div class="mat">Contabilidad II</div>
-                                        <div class="mat">Costos</div>
-                                        <div class="mat">Organización de la Producción</div>
-                                        <div class="mat">Psicología de las Organizaciones</div>Psicología de las Organizaciones
-                                </div>
-                                <p class="taller">Taller</p>
-                                <div id="pri" class="año2">
-                                    <div class="mat">Taller Administrativo Contable II</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">ED. FÍSICA</div>
+                                <div class="mat">INTRODUCCIÓN AL DERECHO</div>
+                                <div class="mat">LENGUA Y LITERATURA</div>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">ORG. PRODUCCIÓN</div>
+                                <div class="mat">COMP. APLICADA II</div>
+                                <div class="mat">CONTABILIDAD II</div>
+                                <div class="mat">ECONOMÍA Y GEST.</div>
+                                <div class="mat">GEOGRAFÍA ECONOM. ARG.</div>
+                                <div class="mat">COSTOS</div>
+                                <div class="mat">PSICOLOGÍA DE LAS ORG.</div>
+                                
+                                <p class="taller">TALLER</p>
+                                <div class="año2">
+                                    <div class="mat">TALLER ADMINISTRATIVO CONT. II</div>
                                 </div>
                             </div>
                         </div>
-    
-                        <h2>6° Año</h2>
+         
+                        <!-- 6° Año -->
+                        <h2>6° AÑO</h2>
                         <div class="flex">
+                            <!-- Computación -->
                             <div class="año">
-                                <p class="esp">Computacion</p>
-                                <div id="sexCom" class="com">
-                                    <div class="mat">Educacion Fisica</div>
-                                    <div class="mat">Ingles</div>
-                                    <div class="mat">Ciudadania y Trabajo</div>
-                                    <div class="mat">Ciencia y Tecnologia</div>
-                                    <div class="mat">Matematica</div>
-                                    <div class="mat">Gestion de los Proc. Productivos</div>
-                                    <div class="mat">Desarrollo de Sistemas</div>
-                                    <div class="mat">Programacion Sobre Redes</div>
-                                    <div class="mat">Administracion de Sist. y reservados</div>
-                                </div>
-                                <p class="taller">Taller</p>
-                                <div id="pri" class="año2">
-                                    <div class="mat">Praticas Profesionalizantes</div>
-                                    <div class="mat">Taller2</div>
+                                <p class="esp">COMPUTACIÓN</p>
+                                <div class="mat">EDUCACIÓN FÍSICA</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">CIUDADANÍA Y TRABAJO</div>
+                                <div class="mat">CIENCIA Y TECNOLOGÍA</div>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">GESTIÓN DE LOS PROC. PRODUCTIVOS</div>
+                                <div class="mat">DESARROLLO DE SISTEMAS</div>
+                                <div class="mat">PROGRAMACIÓN SOBRE REDES</div>
+                                <div class="mat">ADMINISTRACIÓN DE SIST. Y REDES</div>
+                                
+                                <p class="taller">TALLER</p>
+                                <div class="año2">
+                                    <div class="mat">PRÁCTICAS PROFESIONALIZANTES</div>
+                                    <div class="mat">TALLER2</div>
                                 </div>
                             </div>
+         
+                            <!-- GADO -->
                             <div class="año">
                                 <p class="esp">GADO</p>
-                                <div id="sexAdm" class="com">
-                                        <div class="mat">Matematicas</div>
-                                        <div class="mat">Inglés Nivel Alto</div>
-                                        <div class="mat">Educación Física</div>
-                                        <div class="mat">Inglés</div>
-                                        <div class="mat">Ciencia y Tecnología</div>
-                                        <div class="mat">Matemática</div>
-                                        <div class="mat">Gestión de los Procesos Productivos</div>
-                                        <div class="mat">Computación Aplicada III</div>
-                                        <div class="mat">Derecho Comercial Administrativo</div>
-                                        <div class="mat">Bancos y Finanzas</div>
-                                        <div class="mat">Estados Contables</div>
-                                        <div class="mat">Impuestos</div>
-                                        <div class="mat">Marketing</div>
-                                        <div class="mat">Recursos Humanos</div>
-                                </div>
-                                <p class="taller">Taller</p>
-                                <div id="pri" class="año2">
-                                    <div class="mat">Prácticas Profesionalizantes</div>
+                                <div class="mat">GEST. PROC. PRODUCTIVOS</div>
+                                <div class="mat">BANCOS Y FINANZAS</div>
+                                <div class="mat">ESTADOS CONTABLES</div>
+                                <div class="mat">MARKETING</div>
+                                <div class="mat">INGLÉS</div>
+                                <div class="mat">MATEMÁTICAS</div>
+                                <div class="mat">CIENCIA Y TECNOLOGÍA</div>
+                                <div class="mat">COMP.APLICADA III</div>
+                                <div class="mat">DERECHO COMER. Y ADM.</div>
+                                <div class="mat">IMPUESTOS</div>
+                                <div class="mat">REC. HUMANOS</div>
+                                
+                                <p class="taller">TALLER</p>
+                                <div class="año2">
+                                    <div class="mat">PRÁCTICAS PROFESIONALIZANTES</div>
                                 </div>
                             </div>
                         </div>
@@ -409,7 +473,7 @@
                 </div>
                 <div class="redes">
                     <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4" class="social-icon"></a>
-                    <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4">6topp.et24</a>
+                    <a href="https://www.instagram.com/6topp.et24?igsh=bmplNWMxdnNvaHU4">@et24.pp</a>
                 </div>
         </div>
         <div class="border"></div>
